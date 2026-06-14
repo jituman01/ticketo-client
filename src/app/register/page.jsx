@@ -8,8 +8,11 @@ import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
 import toast from "react-hot-toast";
 import { uploadImage } from "@/utils/uploadImage";
+import { redirect } from "next/dist/server/api-utils";
+import { useRouter } from "next/navigation";
 
 export default function RegisterPage() {
+  const router = useRouter();
   const { register, handleSubmit, formState: { errors } } = useForm();
   // console.log("Validation Errors:", errors);
 
@@ -22,7 +25,7 @@ export default function RegisterPage() {
     // console.log("Submitted Data:", data);
     const imageFile = data.image[0];
     const imageUrl = await uploadImage(imageFile);
-    console.log(imageUrl, "imageUrl");
+    // console.log(imageUrl, "imageUrl");
     
     
 
@@ -55,10 +58,14 @@ export default function RegisterPage() {
       role: data.role
     })
 
-    console.log(signUpData,signUpError );
+    // console.log(signUpData,signUpError );
 
     if (signUpError) {
       toast.error("Registration not Succeed...")
+    }
+
+    else {
+      router.push("/");
     }
     
 
