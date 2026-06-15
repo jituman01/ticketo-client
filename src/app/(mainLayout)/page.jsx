@@ -1,5 +1,5 @@
 import WhyChoose from "@/components/WhyChoose";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 import Statistics from "@/components/Statistics";
 import Testimonials from "@/components/Testimonials";
 

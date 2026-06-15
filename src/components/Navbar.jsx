@@ -55,7 +55,7 @@ export default function Navbar() {
           </Link>
           {session && session?.user && (
             <Link
-              href={"/"}
+              href={"/dashboard"}
               className={`text-sm font-medium transition-colors ${pathname.startsWith("/dashboard") ? "text-pink-500 font-semibold" : "text-slate-300 hover:text-white"}`}
             >
               Dashboard
