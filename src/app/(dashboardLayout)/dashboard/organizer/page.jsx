@@ -1,3 +1,4 @@
+import DashboardHeading from "@/components/DashboardHeading";
 import { Card, Button } from "@heroui/react";
 import { FaCalendarAlt, FaUsers, FaDollarSign, FaCrown } from"react-icons/fa";
 
@@ -13,6 +14,7 @@ const OrganizerOverviewPage = () => {
 
     return (
         <div className="space-y-6 mt-6">
+            <DashboardHeading title="Overview" description="Dashboard Overview"/>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="glass border-white/5" radius="lg">
                     <div className="p-6 flex flex-row items-center justify-between">

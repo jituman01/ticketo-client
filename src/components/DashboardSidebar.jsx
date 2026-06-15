@@ -13,10 +13,10 @@ const DashboardSidebar = () => {
 
   const organizerMenu = [
         { key: "overview", label: "Overview", icon: FaUsers, href:"/dashboard/organizer" },
-        { key: "organization", label: "Organization", icon: FaBuilding, href:"/dashboard/organization" },
-        { key: "add-event", label: "Add Event", icon: FaPlus, href:"/dashboard/add-event" },
-        { key: "manage-events", label: "Manage Events", icon: FaCalendarAlt, href:"/dashboard/manage-events" },
-        { key: "attendees", label: "Attendees", icon: FaUsers, href:"/dashboard/attendees" },
+        { key: "organization", label: "Organization", icon: FaBuilding, href:"/dashboard/organizer/organization" },
+        { key: "add-event", label: "Add Event", icon: FaPlus, href:"/dashboard/organizer/add-event" },
+        { key: "manage-events", label: "Manage Events", icon: FaCalendarAlt, href:"/dashboard/organizer/manage-events" },
+        { key: "attendees", label: "Attendees", icon: FaUsers, href:"/dashboard/organizer/attendees" },
   ]
 
   const attendeeMenu = [
